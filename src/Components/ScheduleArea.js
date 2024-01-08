@@ -17,9 +17,18 @@ const ScheduleArea = () => {
     schedule3 : {
       name: "Donec luctus",
       heading: "Opening Hours",
-      time_1: "Monday - Fridayp8.00-20.00",
-      time_2: "Monday - Fridayp8.00-20.00",
-      time_3: "Monday - Fridayp8.00-20.00",
+      time_1: {
+        day:"Monday - Fridayp",
+        time:"8.00-20.00"
+      },
+      time_2: {
+        day:"Saturday",
+        time:"9.00-18.30"
+      },
+      time_3: {
+        day:"Monday - Thursday",
+        time:"9.00-15.00"
+      }
     },
   }
 

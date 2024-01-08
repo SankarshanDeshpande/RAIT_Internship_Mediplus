@@ -1,6 +1,29 @@
 import React from 'react'
+import SingleBlog from './SingleBlog'
 
 const BlogArea = () => {
+
+  const blogs = {
+    blog1:{
+      image:"img/blog1.jpg",
+      date:"22 Aug, 2020",
+      title:"We have annnocuced our new product.",
+      caption:"Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed."
+    },
+    blog2:{
+      image:"img/blog2.jpg",
+      date:"15 Jul, 2020",
+      title:"Top five way for solving teeth problems.",
+      caption:"Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed."
+    },
+    blog3:{
+      image:"img/blog3.jpg",
+      date:"05 Jan, 2020",
+      title:"We provide highly business soliutions.",
+      caption:"Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed."
+    }
+  }
+
   return (
     <>
       <section className="blog section" id="blog">
@@ -20,74 +43,17 @@ const BlogArea = () => {
           <div className="row">
             <div className="col-lg-4 col-md-6 col-12">
               {/* Single Blog */}
-              <div className="single-news">
-                <div className="news-head">
-                  <img src="img/blog1.jpg" alt="#" />
-                </div>
-                <div className="news-body">
-                  <div className="news-content">
-                    <div className="date">22 Aug, 2020</div>
-                    <h2>
-                      <a href="blog-single.html">
-                        We have annnocuced our new product.
-                      </a>
-                    </h2>
-                    <p className="text">
-                      Lorem ipsum dolor a sit ameti, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt sed do incididunt
-                      sed.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <SingleBlog blogs={blogs.blog1}/>
               {/* End Single Blog */}
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               {/* Single Blog */}
-              <div className="single-news">
-                <div className="news-head">
-                  <img src="img/blog2.jpg" alt="#" />
-                </div>
-                <div className="news-body">
-                  <div className="news-content">
-                    <div className="date">15 Jul, 2020</div>
-                    <h2>
-                      <a href="blog-single.html">
-                        Top five way for solving teeth problems.
-                      </a>
-                    </h2>
-                    <p className="text">
-                      Lorem ipsum dolor a sit ameti, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt sed do incididunt
-                      sed.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <SingleBlog blogs={blogs.blog2}/>
               {/* End Single Blog */}
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               {/* Single Blog */}
-              <div className="single-news">
-                <div className="news-head">
-                  <img src="img/blog3.jpg" alt="#" />
-                </div>
-                <div className="news-body">
-                  <div className="news-content">
-                    <div className="date">05 Jan, 2020</div>
-                    <h2>
-                      <a href="blog-single.html">
-                        We provide highly business soliutions.
-                      </a>
-                    </h2>
-                    <p className="text">
-                      Lorem ipsum dolor a sit ameti, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt sed do incididunt
-                      sed.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <SingleBlog blogs={blogs.blog3}/>
               {/* End Single Blog */}
             </div>
           </div>

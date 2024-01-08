@@ -13,11 +13,17 @@ const SingleSchedule = ({schedules}) => {
             <span>{schedules.name}</span>
             <h4>{schedules.heading}</h4>
             <p>
-              {(schedules.caption) !== undefined ? schedules.caption : '' }
+              {(schedules.caption) !== undefined ? <p> {schedules.caption} </p> : '' }
 
               {(schedules.time_1 !== undefined || 
                 schedules.time_2 !== undefined || 
-                schedules.time_3 !== undefined) ? schedules.time_1 +  schedules.time_2 + schedules.time_3 : '' }
+                schedules.time_3 !== undefined) ? 
+                <ul class="time-sidual">
+											<li class="day">{schedules.time_1.day} <span>{schedules.time_1.time}</span></li>
+											<li class="day">{schedules.time_2.day} <span>{schedules.time_2.time}</span></li>
+											<li class="day">{schedules.time_3.day} <span>{schedules.time_3.time}</span></li>
+								</ul> : ''}
+                
 
               
 

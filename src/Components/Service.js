@@ -1,6 +1,39 @@
 import React from 'react'
+import SingleService from './SingleService'
 
 const Service = () => {
+  const services = {
+    service1:{
+      icon:"icofont-prescription",
+      title:"General Treatment",
+      caption:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    service2:{
+      icon:"icofont-tooth",
+      title:"Teeth Whitening",
+      caption:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    service3:{
+      icon:"icofont-heart-alt",
+      title:"Heart Surgery",
+      caption:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    service4:{
+      icon:"icofont-listening",
+      title:"Ear Treatment",
+      caption:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    service5:{
+      icon:"icofont-eye-alt",
+      title:"Vision Problems",
+      caption:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    },
+    service6:{
+      icon:"icofont-blood",
+      title:"Blood Transfusion",
+      caption:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet."
+    }
+  }
   return (
     <>
       <section className="services section">
@@ -20,86 +53,32 @@ const Service = () => {
           <div className="row">
             <div className="col-lg-4 col-md-6 col-12">
               {/* Start Single Service */}
-              <div className="single-service">
-                <i className="icofont icofont-prescription" />
-                <h4>
-                  <a href="service-details.html">General Treatment</a>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  luctus dictum eros ut imperdiet.{" "}
-                </p>
-              </div>
+              <SingleService services={services.service1}/>
               {/* End Single Service */}
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               {/* Start Single Service */}
-              <div className="single-service">
-                <i className="icofont icofont-tooth" />
-                <h4>
-                  <a href="service-details.html">Teeth Whitening</a>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  luctus dictum eros ut imperdiet.{" "}
-                </p>
-              </div>
+              <SingleService services={services.service2}/>
               {/* End Single Service */}
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               {/* Start Single Service */}
-              <div className="single-service">
-                <i className="icofont icofont-heart-alt" />
-                <h4>
-                  <a href="service-details.html">Heart Surgery</a>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  luctus dictum eros ut imperdiet.{" "}
-                </p>
-              </div>
+              <SingleService services={services.service3}/>
               {/* End Single Service */}
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               {/* Start Single Service */}
-              <div className="single-service">
-                <i className="icofont icofont-listening" />
-                <h4>
-                  <a href="service-details.html">Ear Treatment</a>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  luctus dictum eros ut imperdiet.{" "}
-                </p>
-              </div>
+              <SingleService services={services.service4}/>
               {/* End Single Service */}
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               {/* Start Single Service */}
-              <div className="single-service">
-                <i className="icofont icofont-eye-alt" />
-                <h4>
-                  <a href="service-details.html">Vision Problems</a>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  luctus dictum eros ut imperdiet.{" "}
-                </p>
-              </div>
+              <SingleService services={services.service5}/>
               {/* End Single Service */}
             </div>
             <div className="col-lg-4 col-md-6 col-12">
               {/* Start Single Service */}
-              <div className="single-service">
-                <i className="icofont icofont-blood" />
-                <h4>
-                  <a href="service-details.html">Blood Transfusion</a>
-                </h4>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                  luctus dictum eros ut imperdiet.{" "}
-                </p>
-              </div>
+              <SingleService services={services.service6}/>
               {/* End Single Service */}
             </div>
           </div>

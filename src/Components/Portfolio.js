@@ -22,7 +22,7 @@ const Portfolio = () => {
           <div className="row">
             <div className="col-lg-12 col-12">
               <div className="owl-carousel portfolio-slider">
-                <div className="single-pf">
+              <div className="single-pf">
                   <img src="img/pf1.jpg" alt="#" />
                   <a href="portfolio-details.html" className="btn">
                     View Details
